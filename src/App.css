@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body,
+#root {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif;
+	margin: 0;
+	background: #36d1dc;
+	background: -webkit-linear-gradient(to right, #5b86e5, #36d1dc);
+	background: linear-gradient(to right, #5b86e5, #36d1dc);
+}
+
+/* App.tsx */
+.app {
+	width: 50%;
+	height: 50%;
+}
+
+.title {
+	font-size: 1.5rem;
+	color: #ffffff;
+	text-align: center;
+}
+
+/* Zipcode.tsx */
+.zipcode {
+	width: 100%;
+	height: 100%;
+}
+
+.zipcode-input {
+	width: 100%;
+	height: 3rem;
+	padding: 0.5rem;
+	border: 1px solid #333333;
+	border-radius: 0.25rem;
+}
+
+.suggestions-list {
+	max-height: 100%;
+	overflow: scroll;
+	background: #ffffff;
+	border-radius: 0.25rem;
+	opacity: 0.5;
+}
+
+.suggestion {
+	padding: 1rem;
+	margin: 0px;
+	cursor: pointer;
+}
+
+.zipcode-info {
+	font-weight: 600;
+	color: #ffffff;
+}
